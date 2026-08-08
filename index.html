@@ -1,134 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MedCare++</title>
+    <title>MedCare++</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="font-[Poppins] bg-slate-50 text-slate-800">
 
-<nav>
+    <!-- ================= NAVBAR ================= -->
 
-<div class="logo">
-❤️ MedCare++
-</div>
+    <nav class="flex items-center justify-between px-8 py-5 bg-white shadow-sm">
 
-<ul>
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-teal-600">
+            ❤️ MedCare++
+        </div>
 
-<li>Home</li>
-<li>Features</li>
-<li>AI</li>
-<li>About</li>
-<li>Contact</li>
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex items-center gap-8 text-slate-600 font-medium">
 
-</ul>
+            <li>
+                <a href="#" class="hover:text-teal-600 transition duration-300">
+                    Home
+                </a>
+            </li>
 
-<button>Login</button>
+            <li>
+                <a href="#features" class="hover:text-teal-600 transition duration-300">
+                    Features
+                </a>
+            </li>
 
-</nav>
+            <li>
+                <a href="#ai" class="hover:text-teal-600 transition duration-300">
+                    AI
+                </a>
+            </li>
 
+            <li>
+                <a href="#about" class="hover:text-teal-600 transition duration-300">
+                    About
+                </a>
+            </li>
 
-<section class="hero">
+            <li>
+                <a href="#contact" class="hover:text-teal-600 transition duration-300">
+                    Contact
+                </a>
+            </li>
 
-<div class="left">
+        </ul>
 
-<h1>
-AI Powered
-<span>Cardiac Care</span>
-</h1>
+        <!-- Login Button -->
+        <button
+            class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-lg font-medium transition duration-300">
+            Login
+        </button>
 
-<p>
-
-Predict heart disease before it happens using AI,
-real-time monitoring, emergency alerts,
-and secure medical records.
-
-</p>
-
-<div class="buttons">
-
-<button class="primary">
-Get Started
-</button>
-
-<button class="secondary">
-Watch Demo
-</button>
-
-</div>
-
-</div>
-
-<div class="right">
-
-<!-- <img src="heart.png"> -->
-
-</div>
-
-</section>
+    </nav>
 
 
-<section class="features">
+    <!-- ================= HERO SECTION ================= -->
 
-<div class="card">
-❤️
-<h3>AI Prediction</h3>
-<p>Detect heart risks before emergencies.</p>
-</div>
+    <section
+        class="hero min-h-[80vh] flex items-center px-8 py-16 bg-gradient-to-br from-teal-50 to-white">
 
-<div class="card">
-📊
-<h3>Live Monitoring</h3>
-<p>Continuous ECG and vital tracking.</p>
-</div>
+        <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
 
-<div class="card">
-🚑
-<h3>SOS Alerts</h3>
-<p>Emergency ambulance and family alerts.</p>
-</div>
+            <!-- Left Content -->
+            <div class="left">
 
-<div class="card">
-📁
-<h3>Medical Records</h3>
-<p>Secure cloud-based patient history.</p>
-</div>
+                <p class="text-teal-600 font-semibold text-lg mb-4">
+                    SMART HEALTHCARE • AI POWERED
+                </p>
 
-</section>
+                <h1 class="text-5xl md:text-6xl font-bold text-slate-900 leading-tight">
+
+                    AI Powered
+
+                    <span class="block text-teal-600">
+                        Cardiac Care
+                    </span>
+
+                </h1>
+
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed max-w-xl">
+
+                    Predict heart disease before it happens using AI,
+                    real-time monitoring, emergency alerts,
+                    and secure medical records.
+
+                </p>
+
+                <!-- Buttons -->
+                <div class="buttons flex flex-wrap gap-4 mt-8">
+
+                    <button
+                        class="primary bg-teal-600 hover:bg-teal-700 text-white px-7 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg transition duration-300">
+
+                        Get Started
+
+                    </button>
+
+                    <button
+                        class="secondary border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white px-7 py-3 rounded-xl font-semibold transition duration-300">
+
+                        Watch Demo
+
+                    </button>
+
+                </div>
+
+            </div>
 
 
-<section class="stats">
+            <!-- Right Content -->
+            <div class="right flex justify-center items-center">
 
-<div>
-<h2>50K+</h2>
-<p>Patients</p>
-</div>
+                <div
+                    class="w-80 h-80 md:w-96 md:h-96 bg-white rounded-full shadow-xl flex items-center justify-center border-8 border-teal-100">
 
-<div>
-<h2>98%</h2>
-<p>Accuracy</p>
-</div>
+                    <div class="text-center">
 
-<div>
-<h2>24/7</h2>
-<p>Monitoring</p>
-</div>
+                        <div class="text-8xl mb-4">
+                            ❤️
+                        </div>
 
-<div>
-<h2>500+</h2>
-<p>Hospitals</p>
-</div>
+                        <h3 class="text-2xl font-bold text-slate-800">
+                            MedCare++
+                        </h3>
 
-</section>
+                        <p class="text-slate-500 mt-2">
+                            Intelligent Cardiac Care
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES SECTION ================= -->
+
+    <section id="features" class="features py-20 px-8 bg-white">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Section Heading -->
+
+            <div class="text-center mb-12">
+
+                <p class="text-teal-600 font-semibold">
+                    OUR FEATURES
+                </p>
+
+                <h2 class="text-4xl font-bold text-slate-900 mt-2">
+                    Smart Healthcare Solutions
+                </h2>
+
+                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
+                    MedCare++ combines artificial intelligence,
+                    real-time monitoring and emergency response
+                    to provide smarter cardiac care.
+                </p>
+
+            </div>
+
+
+            <!-- Feature Cards -->
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                <!-- Card 1 -->
+
+                <div
+                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                    <div
+                        class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center text-3xl mb-5">
+                        ❤️
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        AI Prediction
+                    </h3>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Detect heart risks before emergencies
+                        using intelligent AI-based prediction.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 2 -->
+
+                <div
+                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                    <div
+                        class="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center text-3xl mb-5">
+                        📊
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        Live Monitoring
+                    </h3>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Continuous ECG and vital tracking
+                        for better health monitoring.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 3 -->
+
+                <div
+                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                    <div
+                        class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-3xl mb-5">
+                        🚑
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        SOS Alerts
+                    </h3>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Emergency ambulance and family alerts
+                        when critical situations occur.
+                    </p>
+
+                </div>
+
+
+                <!-- Card 4 -->
+
+                <div
+                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-3xl mb-5">
+                        📁
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">
+                        Medical Records
+                    </h3>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        Secure cloud-based patient history
+                        and medical records.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= AI SECTION ================= -->
+
+    <section id="ai" class="py-20 px-8 bg-teal-50">
+
+        <div class="max-w-6xl mx-auto text-center">
+
+            <p class="text-teal-600 font-semibold">
+                ARTIFICIAL INTELLIGENCE
+            </p>
+
+            <h2 class="text-4xl font-bold text-slate-900 mt-2">
+                AI-Powered Cardiac Prediction
+            </h2>
+
+            <p class="text-slate-600 max-w-3xl mx-auto mt-5 leading-relaxed">
+
+                MedCare++ uses artificial intelligence to analyze
+                health parameters and identify potential cardiac
+                risks at an early stage.
+
+            </p>
+
+            <div class="mt-10 grid md:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="font-bold text-xl">
+                        AI Analysis
+                    </h3>
+                    <p class="text-slate-600 mt-2">
+                        Intelligent analysis of patient health data.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="text-4xl mb-4">❤️</div>
+                    <h3 class="font-bold text-xl">
+                        Risk Detection
+                    </h3>
+                    <p class="text-slate-600 mt-2">
+                        Early identification of possible cardiac risks.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="font-bold text-xl">
+                        Quick Response
+                    </h3>
+                    <p class="text-slate-600 mt-2">
+                        Faster action during critical situations.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS SECTION ================= -->
+
+    <section class="stats py-16 px-8 bg-slate-900 text-white">
+
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <h2 class="text-4xl font-bold text-teal-400">
+                    50K+
+                </h2>
+                <p class="mt-2 text-slate-300">
+                    Patients
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-bold text-teal-400">
+                    98%
+                </h2>
+                <p class="mt-2 text-slate-300">
+                    Accuracy
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-bold text-teal-400">
+                    24/7
+                </h2>
+                <p class="mt-2 text-slate-300">
+                    Monitoring
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-bold text-teal-400">
+                    500+
+                </h2>
+                <p class="mt-2 text-slate-300">
+                    Hospitals
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about" class="py-20 px-8 bg-white">
+
+        <div class="max-w-5xl mx-auto text-center">
+
+            <p class="text-teal-600 font-semibold">
+                ABOUT MEDCARE++
+            </p>
+
+            <h2 class="text-4xl font-bold text-slate-900 mt-2">
+                Healthcare With Intelligence
+            </h2>
+
+            <p class="text-slate-600 mt-5 leading-relaxed">
+
+                MedCare++ aims to make cardiac healthcare more
+                accessible, intelligent and responsive by combining
+                AI-powered prediction, real-time monitoring,
+                emergency alerts and secure medical records.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT / CTA ================= -->
+
+    <section id="contact" class="py-20 px-8 bg-teal-600">
+
+        <div class="max-w-4xl mx-auto text-center text-white">
+
+            <h2 class="text-4xl font-bold">
+                Take Control of Your Health
+            </h2>
+
+            <p class="mt-5 text-teal-50 text-lg">
+                Start your journey towards smarter and safer healthcare.
+            </p>
+
+            <button
+                class="mt-8 bg-white text-teal-600 px-8 py-3 rounded-xl font-semibold hover:bg-teal-50 transition duration-300">
+
+                Get Started
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-slate-950 text-slate-400 py-8 px-8">
+
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <div>
+                <span class="text-white font-bold text-lg">
+                    ❤️ MedCare++
+                </span>
+
+                <p class="text-sm mt-1">
+                    Smart healthcare powered by AI.
+                </p>
+            </div>
+
+            <p class="text-sm">
+                © 2026 MedCare++. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
