@@ -1,312 +1,82 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+/* =========================================
+   MedCare++ Custom CSS
+   Tailwind CSS handles the main layout.
+   ========================================= */
+
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
 
-background:#f8fbff;
+/* Body */
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fbff;
+    overflow-x: hidden;
 }
 
-/* Navbar */
 
-nav{
+/* Smooth scrolling */
 
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:20px 8%;
-
-background:white;
-
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-
-position:sticky;
-top:0;
-
+html {
+    scroll-behavior: smooth;
 }
 
-.logo{
 
-font-size:28px;
+/* Buttons */
 
-font-weight:700;
-
-color:#2563EB;
-
+button {
+    cursor: pointer;
+    font-family: inherit;
 }
 
-nav ul{
 
-display:flex;
+/* Links */
 
-gap:40px;
-
-list-style:none;
-
+a {
+    text-decoration: none;
 }
 
-nav li{
 
-cursor:pointer;
+/* Hero heart animation */
 
-transition:.3s;
-
+.right > div {
+    animation: float 3s ease-in-out infinite;
 }
 
-nav li:hover{
 
-color:#2563EB;
+@keyframes float {
 
-}
+    0% {
+        transform: translateY(0);
+    }
 
-nav button{
+    50% {
+        transform: translateY(-12px);
+    }
 
-padding:12px 30px;
-
-background:#2563EB;
-
-color:white;
-
-border:none;
-
-border-radius:30px;
-
-cursor:pointer;
+    100% {
+        transform: translateY(0);
+    }
 
 }
 
 
-/* HERO */
+/* Small screen improvements */
 
-.hero{
+@media (max-width: 640px) {
 
-display:flex;
+    h1 {
+        font-size: 2.5rem;
+    }
 
-align-items:center;
-
-justify-content:space-between;
-
-padding:80px 8%;
-
-}
-
-.left{
-
-width:50%;
-
-}
-
-.left h1{
-
-font-size:60px;
-
-line-height:70px;
-
-margin-bottom:20px;
-
-}
-
-.left span{
-
-color:#2563EB;
-
-}
-
-.left p{
-
-font-size:18px;
-
-line-height:34px;
-
-color:#555;
-
-margin-bottom:40px;
-
-}
-
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-}
-
-.primary{
-
-padding:15px 35px;
-
-border:none;
-
-border-radius:40px;
-
-background:#2563EB;
-
-color:white;
-
-font-size:18px;
-
-cursor:pointer;
-
-}
-
-.secondary{
-
-padding:15px 35px;
-
-border:2px solid #2563EB;
-
-background:white;
-
-color:#2563EB;
-
-border-radius:40px;
-
-cursor:pointer;
-
-}
-
-.right{
-
-width:40%;
-
-}
-
-.right img{
-
-width:100%;
-
-animation:float 3s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-0%{transform:translateY(0);}
-
-50%{transform:translateY(-15px);}
-
-100%{transform:translateY(0);}
-
-}
-
-/* FEATURES */
-
-.features{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:30px;
-
-padding:80px 8%;
-
-}
-
-.card{
-
-background:white;
-
-padding:40px;
-
-border-radius:20px;
-
-text-align:center;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card h3{
-
-margin:20px 0;
-
-color:#2563EB;
-
-}
-
-/* STATS */
-
-.stats{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-padding:60px 8%;
-
-background:#2563EB;
-
-color:white;
-
-text-align:center;
-
-}
-
-.stats h2{
-
-font-size:48px;
-
-}
-
-.stats p{
-
-margin-top:10px;
-
-font-size:18px;
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.hero{
-
-flex-direction:column;
-
-}
-
-.left,.right{
-
-width:100%;
-
-text-align:center;
-
-}
-
-.features{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-.stats{
-
-grid-template-columns:repeat(2,1fr);
-
-gap:40px;
-
-}
-
-nav ul{
-
-display:none;
-
-}
+    h2 {
+        font-size: 2rem;
+    }
 
 }
