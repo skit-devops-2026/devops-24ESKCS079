@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedCare++ | Heart Monitor</title>
+
+    <link rel="stylesheet" href="heart-monitor.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>❤</span> MedCare++
+        </div>
+
+        <div class="profile">
+
+            <div class="profile-img">
+                KB
+            </div>
+
+            <div>
+                <h4>Kanika</h4>
+                <p>Patient</p>
+            </div>
+
+        </div>
+
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="active">
+                <span>♥</span>
+                Heart Monitor
+            </a>
+
+            <a href="#">
+                <span>✦</span>
+                AI Prediction
+            </a>
+
+            <a href="#">
+                <span>▥</span>
+                Health Analytics
+            </a>
+
+            <a href="#">
+                <span>▣</span>
+                Medical Records
+            </a>
+
+            <a href="#">
+                <span>⚕</span>
+                Doctors
+            </a>
+
+            <a href="#">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+
+        <div class="emergency-box">
+
+            <div class="emergency-icon">
+                !
+            </div>
+
+            <h4>Emergency?</h4>
+
+            <p>
+                Need immediate medical assistance?
+            </p>
+
+            <button>
+                SOS Emergency
+            </button>
+
+        </div>
+
+
+        <div class="logout">
+
+            <a href="login.html">
+                ← Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="page-label">
+                    HEALTH MONITORING
+                </p>
+
+                <h1>
+                    Heart Monitor
+                </h1>
+
+                <p class="subtitle">
+                    Monitor your heart activity in real time.
+                </p>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <div class="monitor-status">
+
+                    <span class="live-dot"></span>
+
+                    Live Monitoring
+
+                </div>
+
+
+                <div class="user-avatar">
+                    KB
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= LIVE HEART RATE ================= -->
+
+        <section class="main-monitor">
+
+            <div class="monitor-header">
+
+                <div>
+
+                    <p>LIVE HEART RATE</p>
+
+                    <h2>
+                        Current Heart Activity
+                    </h2>
+
+                </div>
+
+                <button class="time-btn">
+                    Real Time ▾
+                </button>
+
+            </div>
+
+
+            <div class="heart-value">
+
+                <div class="heart-icon">
+                    ♥
+                </div>
+
+                <div>
+
+                    <strong>
+                        72
+                    </strong>
+
+                    <span>
+                        BPM
+                    </span>
+
+                    <p>
+                        Normal resting heart rate
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ECG -->
+
+            <div class="ecg-container">
+
+                <div class="ecg-grid"></div>
+
+                <div class="ecg-line"></div>
+
+            </div>
+
+
+            <div class="ecg-info">
+
+                <span>60 BPM</span>
+
+                <span>
+                    ECG • LIVE
+                </span>
+
+                <span>100 BPM</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HEALTH METRICS ================= -->
+
+        <section class="metrics-grid">
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon blue">
+                    ♥
+                </div>
+
+                <div>
+
+                    <p>Average Heart Rate</p>
+
+                    <h2>
+                        74 <small>BPM</small>
+                    </h2>
+
+                    <span class="positive">
+                        ↓ 3% from yesterday
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon green">
+                    ◉
+                </div>
+
+                <div>
+
+                    <p>Blood Oxygen</p>
+
+                    <h2>
+                        98 <small>%</small>
+                    </h2>
+
+                    <span class="positive">
+                        ● Optimal
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon purple">
+                    +
+                </div>
+
+                <div>
+
+                    <p>Blood Pressure</p>
+
+                    <h2>
+                        120/80
+                    </h2>
+
+                    <span class="positive">
+                        ● Normal
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon orange">
+                    ◷
+                </div>
+
+                <div>
+
+                    <p>Monitoring Time</p>
+
+                    <h2>
+                        08:42
+                    </h2>
+
+                    <span>
+                        Hours today
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HISTORY + STATUS ================= -->
+
+        <section class="content-grid">
+
+
+            <!-- HEART HISTORY -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p>HEART RATE HISTORY</p>
+
+                        <h2>
+                            Today's Activity
+                        </h2>
+
+                    </div>
+
+                    <button class="time-btn">
+                        Today ▾
+                    </button>
+
+                </div>
+
+
+                <div class="history-chart">
+
+                    <div class="y-axis">
+
+                        <span>100</span>
+                        <span>90</span>
+                        <span>80</span>
+                        <span>70</span>
+                        <span>60</span>
+
+                    </div>
+
+
+                    <div class="chart-area">
+
+                        <div class="chart-line"></div>
+
+                        <div class="chart-point p1"></div>
+                        <div class="chart-point p2"></div>
+                        <div class="chart-point p3"></div>
+                        <div class="chart-point p4"></div>
+                        <div class="chart-point p5"></div>
+                        <div class="chart-point p6"></div>
+                        <div class="chart-point p7"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart-time">
+
+                    <span>6 AM</span>
+                    <span>9 AM</span>
+                    <span>12 PM</span>
+                    <span>3 PM</span>
+                    <span>6 PM</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- MONITORING STATUS -->
+
+            <div class="panel status-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p>DEVICE STATUS</p>
+
+                        <h2>
+                            Monitoring Status
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="device-status">
+
+                    <div class="device-icon">
+                        ♥
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Heart Sensor
+                        </strong>
+
+                        <p>
+                            Connected
+                        </p>
+
+                    </div>
+
+                    <span class="connected">
+                        ●
+                    </span>
+
+                </div>
+
+
+                <div class="device-status">
+
+                    <div class="device-icon">
+                        ◉
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Oxygen Sensor
+                        </strong>
+
+                        <p>
+                            Connected
+                        </p>
+
+                    </div>
+
+                    <span class="connected">
+                        ●
+                    </span>
+
+                </div>
+
+
+                <div class="device-status">
+
+                    <div class="device-icon">
+                        + 
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            BP Monitor
+                        </strong>
+
+                        <p>
+                            Connected
+                        </p>
+
+                    </div>
+
+                    <span class="connected">
+                        ●
+                    </span>
+
+                </div>
+
+
+                <div class="battery">
+
+                    <div>
+
+                        <span>
+                            Device Battery
+                        </span>
+
+                        <strong>
+                            87%
+                        </strong>
+
+                    </div>
+
+                    <div class="battery-bar">
+
+                        <div></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HEALTH NOTE ================= -->
+
+        <section class="health-note">
+
+            <div class="note-icon">
+                ✦
+            </div>
+
+            <div>
+
+                <h3>
+                    Everything looks normal
+                </h3>
+
+                <p>
+                    Your current heart rate and vital signs
+                    are within the healthy range. MedCare++
+                    will notify you and your emergency contacts
+                    if an abnormal pattern is detected.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <span>
+                © 2026 MedCare++
+            </span>
+
+            <span>
+                AI-powered cardiac healthcare
+            </span>
+
+        </footer>
+
+
+    </main>
+
+</body>
+
+</html>

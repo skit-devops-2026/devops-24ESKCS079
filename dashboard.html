@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedCare++ | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>❤</span> MedCare++
+        </div>
+
+
+        <div class="profile">
+
+            <div class="profile-img">
+                KB
+            </div>
+
+            <div>
+                <h4>Kanika</h4>
+                <p>Patient</p>
+            </div>
+
+        </div>
+
+
+        <nav class="side-nav">
+
+            <a href="#" class="active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="heart-monitor.html">
+                <span>♥</span>
+                Heart Monitor
+            </a>
+
+            <a href="#">
+                <span>✦</span>
+                AI Prediction
+            </a>
+
+            <a href="#">
+                <span>▥</span>
+                Health Analytics
+            </a>
+
+            <a href="#">
+                <span>▣</span>
+                Medical Records
+            </a>
+
+            <a href="#">
+                <span>⚕</span>
+                Doctors
+            </a>
+
+            <a href="#">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+
+        <div class="emergency-box">
+
+            <div class="emergency-icon">
+                !
+            </div>
+
+            <h4>Emergency?</h4>
+
+            <p>
+                Need immediate medical assistance?
+            </p>
+
+            <button>
+                SOS Emergency
+            </button>
+
+        </div>
+
+
+        <div class="logout">
+
+            <a href="login.html">
+                ← Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="welcome-text">
+                    Good morning, Kanika 👋
+                </p>
+
+                <h1>
+                    Your Health Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    ♢
+                    <span></span>
+                </button>
+
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        KB
+                    </div>
+
+                    <div>
+                        <strong>Kanika</strong>
+                        <small>Patient</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= HEALTH OVERVIEW ================= -->
+
+        <section class="overview">
+
+            <div class="overview-card heart-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon">
+                        ♥
+                    </div>
+
+                    <span class="status">
+                        ● Normal
+                    </span>
+
+                </div>
+
+                <p>Heart Rate</p>
+
+                <h2>
+                    72
+                    <small>BPM</small>
+                </h2>
+
+                <div class="mini-chart">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+
+                <small class="card-footer">
+                    Last updated 2 min ago
+                </small>
+
+            </div>
+
+
+
+            <div class="overview-card oxygen-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon">
+                        ◉
+                    </div>
+
+                    <span class="status">
+                        ● Normal
+                    </span>
+
+                </div>
+
+                <p>Blood Oxygen</p>
+
+                <h2>
+                    98
+                    <small>%</small>
+                </h2>
+
+                <div class="progress">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+                <small class="card-footer">
+                    Optimal oxygen level
+                </small>
+
+            </div>
+
+
+
+            <div class="overview-card pressure-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon">
+                        +
+                    </div>
+
+                    <span class="status">
+                        ● Normal
+                    </span>
+
+                </div>
+
+                <p>Blood Pressure</p>
+
+                <h2>
+                    120/80
+                    <small>mmHg</small>
+                </h2>
+
+                <div class="pressure-line"></div>
+
+                <small class="card-footer">
+                    Within healthy range
+                </small>
+
+            </div>
+
+
+
+            <div class="overview-card risk-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon">
+                        ✦
+                    </div>
+
+                    <span class="ai-label">
+                        AI
+                    </span>
+
+                </div>
+
+                <p>AI Risk Score</p>
+
+                <h2>
+                    Low
+                </h2>
+
+                <div class="risk-bar">
+
+                    <div></div>
+
+                </div>
+
+                <small class="card-footer">
+                    98% prediction confidence
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MIDDLE SECTION ================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- HEART MONITOR -->
+
+            <div class="panel heart-monitor">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p>REAL-TIME MONITORING</p>
+
+                        <h2>
+                            Heart Activity
+                        </h2>
+
+                    </div>
+
+                    <button class="time-btn">
+                        Today ▾
+                    </button>
+
+                </div>
+
+
+                <div class="heart-rate">
+
+                    <strong>
+                        72
+                    </strong>
+
+                    <span>
+                        BPM
+                    </span>
+
+                    <small>
+                        Resting heart rate
+                    </small>
+
+                </div>
+
+
+                <div class="large-ecg">
+
+                    <div class="ecg-grid"></div>
+
+                    <div class="ecg-wave"></div>
+
+                </div>
+
+
+                <div class="chart-labels">
+
+                    <span>6 AM</span>
+                    <span>9 AM</span>
+                    <span>12 PM</span>
+                    <span>3 PM</span>
+                    <span>6 PM</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI PREDICTION -->
+
+            <div class="panel ai-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p>AI HEALTH ANALYSIS</p>
+
+                        <h2>
+                            Risk Prediction
+                        </h2>
+
+                    </div>
+
+                    <div class="ai-icon">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <div class="risk-circle">
+
+                    <div>
+
+                        <strong>
+                            LOW
+                        </strong>
+
+                        <span>
+                            Risk
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="prediction-text">
+
+                    Based on your recent health data,
+                    our AI model predicts a low risk of
+                    cardiovascular complications.
+
+                </p>
+
+
+                <button class="prediction-btn">
+                    View Detailed Analysis →
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= BOTTOM SECTION ================= -->
+
+        <section class="bottom-grid">
+
+
+            <!-- RECENT ACTIVITY -->
+
+            <div class="panel activity-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p>HEALTH HISTORY</p>
+
+                        <h2>
+                            Recent Activity
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon blue">
+                        ♥
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Heart rate checked
+                        </strong>
+
+                        <p>
+                            Heart rate was 72 BPM
+                        </p>
+
+                    </div>
+
+                    <span>
+                        10 min ago
+                    </span>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Health assessment completed
+                        </strong>
+
+                        <p>
+                            AI risk assessment: Low
+                        </p>
+
+                    </div>
+
+                    <span>
+                        1 hr ago
+                    </span>
+
+                </div>
+
+
+                <div class="activity">
+
+                    <div class="activity-icon purple">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Medical record updated
+                        </strong>
+
+                        <p>
+                            New health data added
+                        </p>
+
+                    </div>
+
+                    <span>
+                        Yesterday
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="panel quick-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p>QUICK ACCESS</p>
+
+                        <h2>
+                            Quick Actions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <a href="#">
+
+                        <div class="quick-icon blue-bg">
+                            ♥
+                        </div>
+
+                        <span>
+                            Check Heart
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <div class="quick-icon purple-bg">
+                            ✦
+                        </div>
+
+                        <span>
+                            AI Analysis
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <div class="quick-icon green-bg">
+                            ▣
+                        </div>
+
+                        <span>
+                            Records
+                        </span>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <div class="quick-icon red-bg">
+                            !
+                        </div>
+
+                        <span>
+                            Emergency
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <span>
+                © 2026 MedCare++
+            </span>
+
+            <span>
+                AI-powered cardiac healthcare
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+</body>
+
+</html>
