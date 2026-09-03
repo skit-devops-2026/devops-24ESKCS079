@@ -2,144 +2,97 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MedCare++</title>
+    <meta name="description"
+        content="MedCare++ - AI-powered cardiovascular healthcare platform for intelligent monitoring, prediction and emergency response.">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>MedCare++ | AI-Powered Cardiac Healthcare</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-   <link rel="stylesheet" href="./src/output.css">
 </head>
 
 
-<body class="font-[Poppins] bg-slate-50 text-slate-800">
+<body>
 
 
     <!-- =====================================================
          NAVBAR
     ====================================================== -->
 
-    <nav class="flex items-center justify-between px-8 py-5 bg-white shadow-sm">
+    <header class="navbar">
 
-        <!-- Logo -->
-
-        <div class="text-2xl font-bold text-teal-600">
-            ❤️ MedCare++
-        </div>
+        <div class="container nav-container">
 
 
-        <!-- Desktop Navigation -->
+            <!-- LOGO -->
 
-        <ul class="hidden md:flex items-center gap-8 text-slate-600 font-medium">
+            <a href="#home" class="logo">
 
-            <li>
-                <a href="#" class="hover:text-teal-600 transition duration-300">
-                    Home
-                </a>
-            </li>
+                <span class="logo-icon">♥</span>
 
-            <li>
-                <a href="#features" class="hover:text-teal-600 transition duration-300">
-                    Features
-                </a>
-            </li>
-
-            <li>
-                <a href="#ai" class="hover:text-teal-600 transition duration-300">
-                    AI
-                </a>
-            </li>
-
-            <li>
-                <a href="#about" class="hover:text-teal-600 transition duration-300">
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="#contact" class="hover:text-teal-600 transition duration-300">
-                    Contact
-                </a>
-            </li>
-
-        </ul>
-
-
-        <!-- Login Button -->
-
-        <a href="login.html" class="hidden md:block bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-xl font-semibold transition duration-300">
-
-            Login
-
-        </a>
-
-
-        <!-- Mobile Menu Button -->
-
-        <button
-            id="menuBtn"
-            class="md:hidden text-2xl text-teal-600 ml-3"
-            aria-label="Open menu">
-
-            ☰
-
-        </button>
-
-    </nav>
-
-
-
-    <!-- =====================================================
-         MOBILE MENU
-    ====================================================== -->
-
-    <div
-        id="mobileMenu"
-        class="hidden md:hidden bg-white border-t border-slate-200 px-8 py-5">
-
-        <div class="flex flex-col gap-4">
-
-            <a
-                href="#features"
-                class="text-slate-700 hover:text-teal-600 transition">
-
-                Features
+                <span>
+                    MedCare<span class="logo-plus">++</span>
+                </span>
 
             </a>
 
-            <a
-                href="#ai"
-                class="text-slate-700 hover:text-teal-600 transition">
 
-                AI
+            <!-- NAVIGATION -->
 
-            </a>
+            <nav>
 
-            <a
-                href="#about"
-                class="text-slate-700 hover:text-teal-600 transition">
+                <ul class="nav-links">
 
-                About
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
 
-            </a>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
 
-            <a
-                href="#contact"
-                class="text-slate-700 hover:text-teal-600 transition">
+                    <li>
+                        <a href="#how-it-works">How It Works</a>
+                    </li>
 
-                Contact
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
 
-            </a>
+                    <!-- DASHBOARD LINK -->
+
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- NAV BUTTONS -->
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="login.html" class="nav-get-started">
+                    Get Started
+                </a>
+
+            </div>
+
 
         </div>
 
-    </div>
+    </header>
 
 
 
@@ -147,569 +100,847 @@
          HERO SECTION
     ====================================================== -->
 
-    <section
-        class="hero min-h-[80vh] flex items-center px-8 py-16 bg-gradient-to-br from-teal-50 to-white">
-
-        <div
-            class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+    <main>
 
 
-            <!-- LEFT CONTENT -->
+        <section id="home" class="hero">
 
-            <div class="left">
-
-                <p class="text-teal-600 font-semibold text-lg mb-4">
-
-                    SMART HEALTHCARE • AI POWERED
-
-                </p>
+            <div class="container hero-container">
 
 
-                <h1
-                    class="text-5xl md:text-6xl font-bold text-slate-900 leading-tight">
+                <!-- HERO TEXT -->
 
-                    AI Powered
+                <div class="hero-content">
 
-                    <span class="block text-teal-600">
+                    <div class="hero-badge">
 
-                        Cardiac Care
+                        <span>●</span>
 
-                    </span>
+                        AI-Powered Cardiac Healthcare
 
-                </h1>
-
-
-                <p
-                    class="mt-6 text-lg text-slate-600 leading-relaxed max-w-xl">
-
-                    Predict heart disease before it happens using AI,
-                    real-time monitoring, emergency alerts,
-                    and secure medical records.
-
-                </p>
+                    </div>
 
 
-                <!-- HERO BUTTONS -->
+                    <h1>
 
-                <div class="buttons flex flex-wrap gap-4 mt-8">
+                        Smarter Care.
+                        <br>
 
+                        <span>Healthier Hearts.</span>
 
-                    <!-- Get Started -->
-
-                    <button
-                        id="getStarted"
-                        class="primary bg-teal-600 hover:bg-teal-700 text-white px-7 py-3 rounded-xl font-semibold shadow-md hover:shadow-lg transition duration-300">
-
-                        Get Started
-
-                    </button>
+                    </h1>
 
 
-                    <!-- Watch Demo -->
+                    <p>
 
-                    <button
-                        id="watchDemo"
-                        class="secondary border-2 border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white px-7 py-3 rounded-xl font-semibold transition duration-300">
+                        MedCare++ is an intelligent cardiovascular
+                        healthcare platform that monitors your heart,
+                        predicts potential risks using AI, manages
+                        medical records, and enables faster emergency
+                        response.
 
-                        Watch Demo
+                    </p>
 
-                    </button>
+
+                    <!-- HERO BUTTONS -->
+
+                    <div class="hero-buttons">
+
+                        <a href="login.html" class="primary-btn">
+
+                            Get Started
+
+                            <span>→</span>
+
+                        </a>
+
+
+                        <a href="#how-it-works" class="secondary-btn">
+
+                            See How It Works
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- TRUST INFO -->
+
+                    <div class="hero-trust">
+
+                        <div>
+
+                            <strong>24/7</strong>
+
+                            <span>
+                                Health Monitoring
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>AI</strong>
+
+                            <span>
+                                Risk Prediction
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>SOS</strong>
+
+                            <span>
+                                Emergency Support
+                            </span>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
+
+
+
+                <!-- HERO HEALTH CARD -->
+
+                <div class="hero-visual">
+
+
+                    <div class="health-card">
+
+
+                        <div class="health-card-header">
+
+                            <div>
+
+                                <span>
+                                    HEALTH OVERVIEW
+                                </span>
+
+                                <h3>
+                                    Today's Health
+                                </h3>
+
+                            </div>
+
+
+                            <div class="live-status">
+
+                                <span></span>
+
+                                Live
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- HEART RATE -->
+
+                        <div class="heart-rate-card">
+
+                            <div class="metric-icon heart">
+                                ♥
+                            </div>
+
+
+                            <div class="metric-info">
+
+                                <span>
+                                    Heart Rate
+                                </span>
+
+                                <strong>
+                                    72
+                                    <small>BPM</small>
+                                </strong>
+
+                            </div>
+
+
+                            <div class="normal">
+                                Normal
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ECG -->
+
+                        <div class="ecg-preview">
+
+                            <div class="ecg-line"></div>
+
+                        </div>
+
+
+
+                        <!-- OTHER METRICS -->
+
+                        <div class="health-metrics">
+
+
+                            <div class="small-metric">
+
+                                <div class="metric-icon oxygen">
+                                    ◉
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Blood Oxygen
+                                    </span>
+
+                                    <strong>
+                                        98%
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="small-metric">
+
+                                <div class="metric-icon pressure">
+                                    +
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Blood Pressure
+                                    </span>
+
+                                    <strong>
+                                        120/80
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- AI SCORE -->
+
+                        <div class="ai-health-card">
+
+                            <div class="ai-symbol">
+                                ✦
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    AI Risk Assessment
+                                </span>
+
+                                <strong>
+                                    Low Risk
+                                </strong>
+
+                            </div>
+
+                            <span class="ai-confidence">
+                                98%
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FEATURES
+        ====================================================== -->
+
+        <section id="features" class="features-section">
+
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span>
+                        POWERFUL FEATURES
+                    </span>
+
+                    <h2>
+                        Everything You Need for
+                        <br>
+                        Better Heart Health
+                    </h2>
+
+                    <p>
+
+                        MedCare++ combines AI, real-time monitoring,
+                        emergency response and secure medical records
+                        into one intelligent healthcare platform.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="features-grid">
+
+
+                    <!-- FEATURE 1 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon blue">
+                            ♥
+                        </div>
+
+                        <h3>
+                            Real-Time Monitoring
+                        </h3>
+
+                        <p>
+
+                            Continuously monitor heart rate,
+                            blood oxygen, blood pressure and
+                            other vital health parameters.
+
+                        </p>
+
+                        <a href="heart-monitor.html">
+                            Explore Monitoring →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- FEATURE 2 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon purple">
+                            ✦
+                        </div>
+
+                        <h3>
+                            AI Risk Prediction
+                        </h3>
+
+                        <p>
+
+                            AI analyzes your health patterns
+                            and identifies potential cardiovascular
+                            risks before they become serious.
+
+                        </p>
+
+                        <a href="login.html">
+                            Explore AI →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- FEATURE 3 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon red">
+                            !
+                        </div>
+
+                        <h3>
+                            Emergency Response
+                        </h3>
+
+                        <p>
+
+                            Quickly connect patients with
+                            emergency responders and caregivers
+                            during critical situations.
+
+                        </p>
+
+                        <a href="login.html">
+                            Emergency Support →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- FEATURE 4 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon green">
+                            ▣
+                        </div>
+
+                        <h3>
+                            Medical Records
+                        </h3>
+
+                        <p>
+
+                            Keep important medical information
+                            organized and accessible for doctors
+                            and patients.
+
+                        </p>
+
+                        <a href="login.html">
+                            Manage Records →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- FEATURE 5 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon orange">
+                            ⚕
+                        </div>
+
+                        <h3>
+                            Doctor Connectivity
+                        </h3>
+
+                        <p>
+
+                            Connect patients with healthcare
+                            professionals for better diagnosis
+                            and personalized care.
+
+                        </p>
+
+                        <a href="login.html">
+                            Find Doctors →
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- FEATURE 6 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon cyan">
+                            🔒
+                        </div>
+
+                        <h3>
+                            Secure Health Data
+                        </h3>
+
+                        <p>
+
+                            Keep your sensitive healthcare
+                            information protected with secure
+                            digital records.
+
+                        </p>
+
+                        <a href="login.html">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+
+                </div>
+
 
             </div>
 
 
+        </section>
 
-            <!-- RIGHT CONTENT -->
 
-            <div class="right flex justify-center items-center">
 
-                <div
-                    class="w-80 h-80 md:w-96 md:h-96 bg-white rounded-full shadow-xl flex items-center justify-center border-8 border-teal-100">
+        <!-- =====================================================
+             HOW IT WORKS
+        ====================================================== -->
 
-                    <div class="text-center">
+        <section id="how-it-works" class="how-section">
 
-                        <div class="text-8xl mb-4">
 
-                            ❤️
+            <div class="container">
 
+
+                <div class="section-heading">
+
+                    <span>
+                        HOW IT WORKS
+                    </span>
+
+                    <h2>
+                        Your Health. One Intelligent Platform.
+                    </h2>
+
+                    <p>
+
+                        MedCare++ brings monitoring, prediction
+                        and emergency support together in a
+                        simple four-step process.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="steps">
+
+
+                    <!-- STEP 1 -->
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            01
                         </div>
 
-                        <h3 class="text-2xl font-bold text-slate-800">
+                        <div class="step-icon">
+                            ♙
+                        </div>
 
-                            MedCare++
-
+                        <h3>
+                            Create Your Profile
                         </h3>
 
-                        <p class="text-slate-500 mt-2">
+                        <p>
 
-                            Intelligent Cardiac Care
+                            Register securely and add your
+                            basic health information.
 
                         </p>
 
                     </div>
 
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
 
 
+                    <!-- STEP 2 -->
 
-    <!-- =====================================================
-         FEATURES SECTION
-    ====================================================== -->
+                    <div class="step">
 
-    <section
-        id="features"
-        class="features py-20 px-8 bg-white">
+                        <div class="step-number">
+                            02
+                        </div>
 
-        <div class="max-w-7xl mx-auto">
+                        <div class="step-icon">
+                            ♥
+                        </div>
 
+                        <h3>
+                            Monitor Your Health
+                        </h3>
 
-            <!-- Section Heading -->
+                        <p>
 
-            <div class="text-center mb-12">
+                            Track important cardiovascular
+                            health parameters in real time.
 
-                <p class="text-teal-600 font-semibold">
-
-                    OUR FEATURES
-
-                </p>
-
-                <h2 class="text-4xl font-bold text-slate-900 mt-2">
-
-                    Smart Healthcare Solutions
-
-                </h2>
-
-                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
-
-                    MedCare++ combines artificial intelligence,
-                    real-time monitoring and emergency response
-                    to provide smarter cardiac care.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- Feature Cards -->
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-
-                <!-- AI Prediction -->
-
-                <div
-                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300 cursor-pointer">
-
-                    <div
-                        class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center text-3xl mb-5">
-
-                        ❤️
+                        </p>
 
                     </div>
 
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">
 
-                        AI Prediction
 
-                    </h3>
+                    <!-- STEP 3 -->
 
-                    <p class="text-slate-600 leading-relaxed">
+                    <div class="step">
 
-                        Detect heart risks before emergencies
-                        using intelligent AI-based prediction.
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="step-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            AI Predicts Risk
+                        </h3>
+
+                        <p>
+
+                            AI analyzes your health data
+                            and identifies potential risks.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- STEP 4 -->
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <div class="step-icon">
+                            !
+                        </div>
+
+                        <h3>
+                            Get Timely Help
+                        </h3>
+
+                        <p>
+
+                            Receive alerts and connect with
+                            emergency support when required.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WHY MEDCARE++
+        ====================================================== -->
+
+        <section id="about" class="about-section">
+
+
+            <div class="container about-container">
+
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        WHY MEDCARE++
+                    </span>
+
+                    <h2>
+                        Healthcare That
+                        <span>Thinks Ahead.</span>
+                    </h2>
+
+                    <p>
+
+                        Traditional healthcare often reacts after
+                        symptoms become serious. MedCare++ focuses
+                        on prevention by combining continuous
+                        monitoring, AI-powered prediction and
+                        rapid emergency response.
+
+                    </p>
+
+
+                    <div class="about-points">
+
+                        <div>
+
+                            <span class="check">
+                                ✓
+                            </span>
+
+                            <p>
+                                Early detection of cardiovascular risks
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="check">
+                                ✓
+                            </span>
+
+                            <p>
+                                Continuous health monitoring
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="check">
+                                ✓
+                            </span>
+
+                            <p>
+                                Faster emergency intervention
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="check">
+                                ✓
+                            </span>
+
+                            <p>
+                                Centralized medical information
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="login.html" class="primary-btn">
+                        Start Your Health Journey →
+                    </a>
+
+                </div>
+
+
+
+                <!-- ABOUT VISUAL -->
+
+                <div class="about-visual">
+
+
+                    <div class="about-card main-about-card">
+
+                        <div class="about-card-icon">
+                            ♥
+                        </div>
+
+                        <h3>
+                            Intelligent Cardiac Care
+                        </h3>
+
+                        <p>
+                            Monitor. Predict. Protect.
+                        </p>
+
+                    </div>
+
+
+                    <div class="floating-card card-one">
+
+                        <strong>
+                            24/7
+                        </strong>
+
+                        <span>
+                            Monitoring
+                        </span>
+
+                    </div>
+
+
+                    <div class="floating-card card-two">
+
+                        <strong>
+                            AI
+                        </strong>
+
+                        <span>
+                            Powered
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="cta-section">
+
+
+            <div class="container cta-container">
+
+
+                <div>
+
+                    <span>
+                        TAKE CONTROL OF YOUR HEART HEALTH
+                    </span>
+
+                    <h2>
+                        Your Heart Deserves
+                        Smarter Care.
+                    </h2>
+
+                    <p>
+
+                        Start monitoring your cardiovascular
+                        health with MedCare++ today.
 
                     </p>
 
                 </div>
 
 
+                <a href="login.html" class="cta-btn">
 
-                <!-- Live Monitoring -->
+                    Get Started
 
-                <div
-                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300 cursor-pointer">
+                    <span>→</span>
 
-                    <div
-                        class="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center text-3xl mb-5">
+                </a>
 
-                        📊
-
-                    </div>
-
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">
-
-                        Live Monitoring
-
-                    </h3>
-
-                    <p class="text-slate-600 leading-relaxed">
-
-                        Continuous ECG and vital tracking
-                        for better health monitoring.
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- SOS Alerts -->
-
-                <div
-                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300 cursor-pointer">
-
-                    <div
-                        class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-3xl mb-5">
-
-                        🚑
-
-                    </div>
-
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">
-
-                        SOS Alerts
-
-                    </h3>
-
-                    <p class="text-slate-600 leading-relaxed">
-
-                        Emergency ambulance and family alerts
-                        when critical situations occur.
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- Medical Records -->
-
-                <div
-                    class="card bg-slate-50 p-7 rounded-2xl border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition duration-300 cursor-pointer">
-
-                    <div
-                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-3xl mb-5">
-
-                        📁
-
-                    </div>
-
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">
-
-                        Medical Records
-
-                    </h3>
-
-                    <p class="text-slate-600 leading-relaxed">
-
-                        Secure cloud-based patient history
-                        and medical records.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         AI SECTION
-    ====================================================== -->
-
-    <section
-        id="ai"
-        class="py-20 px-8 bg-teal-50">
-
-        <div class="max-w-6xl mx-auto text-center">
-
-            <p class="text-teal-600 font-semibold">
-
-                ARTIFICIAL INTELLIGENCE
-
-            </p>
-
-
-            <h2 class="text-4xl font-bold text-slate-900 mt-2">
-
-                AI-Powered Cardiac Prediction
-
-            </h2>
-
-
-            <p
-                class="text-slate-600 max-w-3xl mx-auto mt-5 leading-relaxed">
-
-                MedCare++ uses artificial intelligence to analyze
-                health parameters and identify potential cardiac
-                risks at an early stage.
-
-            </p>
-
-
-
-            <div class="mt-10 grid md:grid-cols-3 gap-6">
-
-
-                <!-- AI Analysis -->
-
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition">
-
-                    <div class="text-4xl mb-4">
-
-                        🧠
-
-                    </div>
-
-                    <h3 class="font-bold text-xl">
-
-                        AI Analysis
-
-                    </h3>
-
-                    <p class="text-slate-600 mt-2">
-
-                        Intelligent analysis of patient health data.
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- Risk Detection -->
-
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition">
-
-                    <div class="text-4xl mb-4">
-
-                        ❤️
-
-                    </div>
-
-                    <h3 class="font-bold text-xl">
-
-                        Risk Detection
-
-                    </h3>
-
-                    <p class="text-slate-600 mt-2">
-
-                        Early identification of possible cardiac risks.
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- Quick Response -->
-
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition">
-
-                    <div class="text-4xl mb-4">
-
-                        ⚡
-
-                    </div>
-
-                    <h3 class="font-bold text-xl">
-
-                        Quick Response
-
-                    </h3>
-
-                    <p class="text-slate-600 mt-2">
-
-                        Faster action during critical situations.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         STATS SECTION
-    ====================================================== -->
-
-    <section
-        class="stats py-16 px-8 bg-slate-900 text-white">
-
-        <div
-            class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-
-            <div>
-
-                <h2 class="text-4xl font-bold text-teal-400">
-
-                    50K+
-
-                </h2>
-
-                <p class="mt-2 text-slate-300">
-
-                    Patients
-
-                </p>
 
             </div>
 
 
-
-            <div>
-
-                <h2 class="text-4xl font-bold text-teal-400">
-
-                    98%
-
-                </h2>
-
-                <p class="mt-2 text-slate-300">
-
-                    Accuracy
-
-                </p>
-
-            </div>
+        </section>
 
 
-
-            <div>
-
-                <h2 class="text-4xl font-bold text-teal-400">
-
-                    24/7
-
-                </h2>
-
-                <p class="mt-2 text-slate-300">
-
-                    Monitoring
-
-                </p>
-
-            </div>
-
-
-
-            <div>
-
-                <h2 class="text-4xl font-bold text-teal-400">
-
-                    500+
-
-                </h2>
-
-                <p class="mt-2 text-slate-300">
-
-                    Hospitals
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         ABOUT SECTION
-    ====================================================== -->
-
-    <section
-        id="about"
-        class="py-20 px-8 bg-white">
-
-        <div class="max-w-5xl mx-auto text-center">
-
-            <p class="text-teal-600 font-semibold">
-
-                ABOUT MEDCARE++
-
-            </p>
-
-            <h2 class="text-4xl font-bold text-slate-900 mt-2">
-
-                Healthcare With Intelligence
-
-            </h2>
-
-            <p
-                class="text-slate-600 mt-5 leading-relaxed">
-
-                MedCare++ aims to make cardiac healthcare more
-                accessible, intelligent and responsive by combining
-                AI-powered prediction, real-time monitoring,
-                emergency alerts and secure medical records.
-
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         CONTACT / CTA SECTION
-    ====================================================== -->
-
-    <section
-        id="contact"
-        class="py-20 px-8 bg-teal-600">
-
-        <div class="max-w-4xl mx-auto text-center text-white">
-
-            <h2 class="text-4xl font-bold">
-
-                Take Control of Your Health
-
-            </h2>
-
-            <p class="mt-5 text-teal-50 text-lg">
-
-                Start your journey towards smarter and safer healthcare.
-
-            </p>
-
-
-            <button
-                id="contactBtn"
-                class="mt-8 bg-white text-teal-600 px-8 py-3 rounded-xl font-semibold hover:bg-teal-50 transition duration-300">
-
-                Get Started
-
-            </button>
-
-        </div>
-
-    </section>
+    </main>
 
 
 
@@ -717,47 +948,121 @@
          FOOTER
     ====================================================== -->
 
-    <footer
-        class="bg-slate-950 text-slate-400 py-8 px-8">
-
-        <div
-            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <footer class="footer">
 
 
-            <div>
+        <div class="container footer-container">
 
-                <span class="text-white font-bold text-lg">
 
-                    ❤️ MedCare++
+            <div class="footer-brand">
 
-                </span>
+                <a href="#home" class="logo">
 
-                <p class="text-sm mt-1">
+                    <span class="logo-icon">♥</span>
 
-                    Smart healthcare powered by AI.
+                    MedCare<span class="logo-plus">++</span>
+
+                </a>
+
+                <p>
+
+                    AI-powered cardiovascular healthcare
+                    for a healthier tomorrow.
 
                 </p>
 
             </div>
 
 
-            <p class="text-sm">
+            <div class="footer-links">
 
-                © 2026 MedCare++. All rights reserved.
+                <div>
 
-            </p>
+                    <h4>
+                        Platform
+                    </h4>
+
+                    <a href="#features">
+                        Features
+                    </a>
+
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+
+                    <a href="heart-monitor.html">
+                        Heart Monitor
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Account
+                    </h4>
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                    <a href="login.html">
+                        Register
+                    </a>
+
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Information
+                    </h4>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#how-it-works">
+                        How It Works
+                    </a>
+
+                    <a href="#features">
+                        Features
+                    </a>
+
+                </div>
+
+            </div>
+
 
         </div>
 
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MedCare++. All rights reserved.
+                </p>
+
+                <p>
+                    AI-powered cardiac healthcare platform
+                </p>
+
+            </div>
+
+        </div>
+
+
     </footer>
 
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-
-    <script src="script.js"></script>
 
 </body>
 
