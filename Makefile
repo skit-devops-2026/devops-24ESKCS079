@@ -4,8 +4,8 @@ install:
 	npm ci
 
 test:
-	node --test tests\medcare.test.js
-	
+	node --test tests/medcare.test.js
+
 run:
 	python -m http.server 5500
 
