@@ -23,6 +23,28 @@ and supporting better healthcare awareness.
 - Backend: Not implemented
 - Database: Not implemented
 
+## Project structure
+
+```text
+MEDCARE++/
+├── index.html
+├── login.html
+├── dashboard.html
+├── heart-monitor.html
+├── script.js
+├── style.css
+├── dashboard.css
+├── heart-monitor.css
+├── images/
+├── src/
+│   ├── input.css
+│   └── output.css
+├── tests/
+├── scripts/
+├── docs/
+├── monitoring/
+└── k8s/
+
 ## Running locally
 
 ```bash
