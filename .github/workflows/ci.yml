@@ -41,6 +41,7 @@ jobs:
 
       - run: make install
       - run: make test
+      - run: node --test tests/medcare.test.js
       - run: make build
   # ---------------------------------------------------------------------------
   # M4 — Containerization
