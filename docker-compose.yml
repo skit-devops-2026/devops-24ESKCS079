@@ -1,0 +1,9 @@
+services:
+  medcare:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medcare-compose
+    ports:
+      - "8080:80"
+    restart: unless-stopped
