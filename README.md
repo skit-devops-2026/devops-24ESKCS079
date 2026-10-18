@@ -1,71 +1,66 @@
 ﻿# MedCare++
 
-> A smart healthcare monitoring platform designed to help users monitor
-> cardiovascular health and access important healthcare information through
-> a simple web interface.
+A smart healthcare monitoring platform designed to help users monitor cardiovascular health and access important healthcare information through a simple web interface.
 
 ## Author
 
-| Roll No. | Name | GitHub username |
+| Roll No. | Name | GitHub Username |
 |---|---|---|
-| 24ESKCS079 | Kanika Bahediya | Bahediyakanika |
+| 24ESKCS079 | Kanika Bahediya | [Bahediyakanika](https://github.com/Bahediyakanika) |
 
 ## About
 
-MedCare++ is a web-based healthcare monitoring platform focused on
-cardiovascular health and patient monitoring. It provides a user-friendly
-interface for accessing health information, monitoring heart-related data,
-and supporting better healthcare awareness.
+MedCare++ is a web-based healthcare monitoring platform focused on cardiovascular health and patient monitoring. It provides a user-friendly interface for accessing health information, monitoring heart-related data, and supporting better healthcare awareness.
 
-The project is developed as a DevOps-enabled application with automated
-testing, continuous integration, containerization, deployment, and monitoring
-practices.
+The project is developed as a DevOps-enabled application with automated testing, continuous integration, containerization, deployment, and monitoring practices.
 
 ## Tech Stack
 
-- Frontend: HTML, CSS, JavaScript, Tailwind CSS
-- Backend: Not implemented
-- Database: Not implemented
-- Web Server: Nginx
-- Containerization: Docker, Docker Compose
-- CI: GitHub Actions
-- CI/CD Pipeline: GitHub Actions
-- Deployment: Render
-- Testing: Node.js built-in test runner
+- **Frontend:** HTML, CSS, JavaScript, Tailwind CSS
+- **Backend:** Not implemented
+- **Database:** Not implemented
+- **Web Server:** Nginx
+- **Containerization:** Docker, Docker Compose
+- **CI/CD:** GitHub Actions
+- **Deployment:** Render
+- **Testing:** Node.js built-in test runner
+- **Monitoring:** Prometheus and Grafana
+- **Orchestration:** Kubernetes
+- **Pipeline Automation:** Jenkins
 
 ## Project Structure
 
 ```text
 MEDCARE++/
-â”œâ”€â”€ .github/
-â”‚   â””â”€â”€ workflows/
-â”‚       â””â”€â”€ ci.yml
-â”œâ”€â”€ index.html
-â”œâ”€â”€ login.html
-â”œâ”€â”€ dashboard.html
-â”œâ”€â”€ heart-monitor.html
-â”œâ”€â”€ script.js
-â”œâ”€â”€ style.css
-â”œâ”€â”€ dashboard.css
-â”œâ”€â”€ heart-monitor.css
-â”œâ”€â”€ images/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ input.css
-â”‚   â””â”€â”€ output.css
-â”œâ”€â”€ tests/
-â”‚   â””â”€â”€ medcare.test.js
-â”œâ”€â”€ scripts/
-â”‚   â””â”€â”€ hygiene.sh
-â”œâ”€â”€ docs/
-â”œâ”€â”€ monitoring/
-â”œâ”€â”€ k8s/
-â”œâ”€â”€ Dockerfile
-â”œâ”€â”€ docker-compose.yml
-â”œâ”€â”€ nginx.conf
-â”œâ”€â”€ Jenkinsfile
-â”œâ”€â”€ Makefile
-â”œâ”€â”€ package.json
-â””â”€â”€ README.md
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── index.html
+├── login.html
+├── dashboard.html
+├── heart-monitor.html
+├── script.js
+├── style.css
+├── dashboard.css
+├── heart-monitor.css
+├── images/
+├── src/
+│   ├── input.css
+│   └── output.css
+├── tests/
+│   └── medcare.test.js
+├── scripts/
+│   └── hygiene.sh
+├── docs/
+├── monitoring/
+├── k8s/
+├── Dockerfile
+├── docker-compose.yml
+├── nginx.conf
+├── Jenkinsfile
+├── Makefile
+├── package.json
+└── README.md
 ```
 
 ## Running Locally
@@ -86,10 +81,7 @@ The application can then be accessed through the local development server.
 
 ## Testing
 
-Automated tests are included to verify important MedCare++ project
-requirements.
-
-Run the test suite using:
+Run the automated test suite:
 
 ```bash
 make test
@@ -103,7 +95,7 @@ The test suite checks:
 
 ## Build
 
-Build the Tailwind CSS output using:
+Build the Tailwind CSS output:
 
 ```bash
 make build
@@ -123,27 +115,23 @@ Run the Docker container:
 docker run -d -p 8080:80 --name medcare-health medcare-app
 ```
 
-The application will be available at:
+Application URL:
 
-```text
 http://localhost:8080
-```
 
-Health check endpoint:
+Health-check endpoint:
 
-```text
 http://localhost:8080/health
-```
 
 ## Docker Compose
 
-The application can also be started using Docker Compose:
+Start the application using Docker Compose:
 
 ```bash
 docker compose up --build
 ```
 
-To stop the services:
+Stop the services:
 
 ```bash
 docker compose down
@@ -162,11 +150,9 @@ The CI pipeline performs:
 5. Docker image build
 6. Docker image push to GitHub Container Registry
 
-The workflow configuration is available at:
+Workflow configuration:
 
-```text
-.github/workflows/ci.yml
-```
+`.github/workflows/ci.yml`
 
 ## Jenkins Pipeline
 
@@ -178,75 +164,67 @@ The Jenkins pipeline performs:
 2. Automated testing
 3. Application build
 
-The pipeline configuration is available in:
+Pipeline configuration:
 
-```text
-Jenkinsfile
-```
+`Jenkinsfile`
 
 ## Deployment
 
 MedCare++ is deployed as a Docker-based web service using Render.
 
-### Live URL
+### Live Application
 
-https://devops-24eskcs079.onrender.com
+[https://devops-24eskcs079.onrender.com](https://devops-24eskcs079.onrender.com)
 
 ### Health Endpoint
 
-The deployed application provides a health-check endpoint:
+[https://devops-24eskcs079.onrender.com/health](https://devops-24eskcs079.onrender.com/health)
 
-```text
-https://devops-24eskcs079.onrender.com/health
-```
-
-The `/health` endpoint returns HTTP 200 when the application is running
-correctly.
+The `/health` endpoint was verified to return HTTP 200 OK when the application was running correctly.
 
 ## DevOps Practices
 
 This project demonstrates the following DevOps practices:
 
 - Git-based version control
-- Feature branches
-- Pull requests
-- Continuous Integration
+- Feature branches and pull requests
+- Continuous integration
 - Automated testing
 - Build automation
-- Jenkins pipeline
+- Jenkins pipeline automation
 - Docker containerization
 - Docker Compose
 - Container image publishing
 - Cloud deployment
 - Application health checks
-- Monitoring configuration
+- Prometheus and Grafana monitoring configuration
 - Kubernetes deployment configuration
 
 ## Repository
 
 The project repository is maintained under the SKIT DevOps organization:
 
-```text
-skit-devops-2026/devops-24ESKCS079
-```
+[skit-devops-2026/devops-24ESKCS079](https://github.com/skit-devops-2026/devops-24ESKCS079)
+
 ## Deployment Evidence
 
-**GitHub Actions — CI/CD Pipeline**
+### GitHub Actions — CI/CD Pipeline
 
 ![GitHub Actions successful workflow](docs/github-actions.png)
 
-**Render — Live Deployment**
+### Render — Live Deployment
 
 ![Render deployment status](docs/render-deployment.png)
 
-**Kubernetes — Running Pods**
+### Kubernetes — Running Pods
 
 ![Kubernetes pods running](docs/k8s-pods.png)
 
-**Application Deployment**
+### Application Deployment
 
 ![Application deployment evidence](docs/deployment.png)
-**Health Check**
+
+### Health Check
 
 The live health endpoint was verified to return HTTP 200 OK.
 
