@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: medcare
@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: medcare
-          image: medcare-medcare:latest
+          image: ghcr.io/skit-devops-2026/devops-24eskcs079:260d4553a7b21be065ce9d374653b9a2e7180b2c
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
+
