@@ -229,3 +229,26 @@ The project repository is maintained under the SKIT DevOps organization:
 ```text
 skit-devops-2026/devops-24ESKCS079
 ```
+## Deployment Evidence
+
+**GitHub Actions — CI/CD Pipeline**
+
+![GitHub Actions successful workflow](docs/github-actions.png)
+
+**Render — Live Deployment**
+
+![Render deployment status](docs/render-deployment.png)
+
+**Kubernetes — Running Pods**
+
+![Kubernetes pods running](docs/k8s-pods.png)
+
+**Application Deployment**
+
+![Application deployment evidence](docs/deployment.png)
+
+**Health Check**
+
+The live health endpoint was verified to return HTTP 200 OK.
+
+See the captured response in [docs/health-check.txt](docs/health-check.txt).
