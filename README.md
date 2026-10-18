@@ -1,4 +1,4 @@
-# MedCare++
+﻿# MedCare++
 
 > A smart healthcare monitoring platform designed to help users monitor
 > cardiovascular health and access important healthcare information through
@@ -37,35 +37,35 @@ practices.
 
 ```text
 MEDCARE++/
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── index.html
-├── login.html
-├── dashboard.html
-├── heart-monitor.html
-├── script.js
-├── style.css
-├── dashboard.css
-├── heart-monitor.css
-├── images/
-├── src/
-│   ├── input.css
-│   └── output.css
-├── tests/
-│   └── medcare.test.js
-├── scripts/
-│   └── hygiene.sh
-├── docs/
-├── monitoring/
-├── k8s/
-├── Dockerfile
-├── docker-compose.yml
-├── nginx.conf
-├── Jenkinsfile
-├── Makefile
-├── package.json
-└── README.md
+â”œâ”€â”€ .github/
+â”‚   â””â”€â”€ workflows/
+â”‚       â””â”€â”€ ci.yml
+â”œâ”€â”€ index.html
+â”œâ”€â”€ login.html
+â”œâ”€â”€ dashboard.html
+â”œâ”€â”€ heart-monitor.html
+â”œâ”€â”€ script.js
+â”œâ”€â”€ style.css
+â”œâ”€â”€ dashboard.css
+â”œâ”€â”€ heart-monitor.css
+â”œâ”€â”€ images/
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ input.css
+â”‚   â””â”€â”€ output.css
+â”œâ”€â”€ tests/
+â”‚   â””â”€â”€ medcare.test.js
+â”œâ”€â”€ scripts/
+â”‚   â””â”€â”€ hygiene.sh
+â”œâ”€â”€ docs/
+â”œâ”€â”€ monitoring/
+â”œâ”€â”€ k8s/
+â”œâ”€â”€ Dockerfile
+â”œâ”€â”€ docker-compose.yml
+â”œâ”€â”€ nginx.conf
+â”œâ”€â”€ Jenkinsfile
+â”œâ”€â”€ Makefile
+â”œâ”€â”€ package.json
+â””â”€â”€ README.md
 ```
 
 ## Running Locally
@@ -231,22 +231,21 @@ skit-devops-2026/devops-24ESKCS079
 ```
 ## Deployment Evidence
 
-**GitHub Actions � CI/CD Pipeline**
+**GitHub Actions — CI/CD Pipeline**
 
 ![GitHub Actions successful workflow](docs/github-actions.png)
 
-**Render � Live Deployment**
+**Render — Live Deployment**
 
 ![Render deployment status](docs/render-deployment.png)
 
-**Kubernetes � Running Pods**
+**Kubernetes — Running Pods**
 
 ![Kubernetes pods running](docs/k8s-pods.png)
 
 **Application Deployment**
 
 ![Application deployment evidence](docs/deployment.png)
-
 **Health Check**
 
 The live health endpoint was verified to return HTTP 200 OK.
