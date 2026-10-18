@@ -1,3 +1,4 @@
+
 name: CI
 
 on:
@@ -5,9 +6,7 @@ on:
   pull_request:
 
 jobs:
-  # ---------------------------------------------------------------------------
-  # Given to you. Do not delete this job.
-  # ---------------------------------------------------------------------------
+  # M1 — Repository hygiene
   hygiene:
     name: Repository hygiene
     runs-on: ubuntu-latest
@@ -15,19 +14,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Run hygiene checks
         run: bash scripts/hygiene.sh
 
-  # ---------------------------------------------------------------------------
-  # M3 — YOUR WORK STARTS HERE.
-  #
-  # Uncomment the job below and make it pass. Fill in the Makefile targets for
-  # your stack; do not change the target names, because this file calls them.
-  #
-  # The pipeline must genuinely fail when your tests fail. Do not add
-  # continue-on-error or "|| true" to make it green.
-  # ---------------------------------------------------------------------------
-
+  # M3 — Build and automated tests
   build-and-test:
     name: Build and test
     runs-on: ubuntu-latest
@@ -47,10 +38,8 @@ jobs:
 
       - name: Build application
         run: make build
-  # ---------------------------------------------------------------------------
-  # M4 — Containerization
-  # ---------------------------------------------------------------------------
 
+  # M4 — Containerization
   docker:
     name: Build and push Docker image
     needs: build-and-test
@@ -77,9 +66,7 @@ jobs:
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-  # ---------------------------------------------------------------------------
-  # M5 — Deployment to Render
-  # ---------------------------------------------------------------------------
+  # M5 — Deploy to Render and verify the live application
   deploy:
     name: Deploy to Render
     needs: docker
@@ -93,3 +80,24 @@ jobs:
         run: |
           test -n "$RENDER_DEPLOY_HOOK_URL"
           curl --fail --silent --show-error --request POST "$RENDER_DEPLOY_HOOK_URL"
+
+      - name: Verify live deployment
+        run: |
+          set -eu
+
+          for attempt in $(seq 1 30); do
+            HOME_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 https://devops-24eskcs079.onrender.com/ || true)
+            HEALTH_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 https://devops-24eskcs079.onrender.com/health || true)
+
+            echo "Attempt $attempt: homepage=$HOME_STATUS health=$HEALTH_STATUS"
+
+            if [ "$HOME_STATUS" = "200" ] && [ "$HEALTH_STATUS" = "200" ]; then
+              echo "Live deployment and health endpoint are responding."
+              exit 0
+            fi
+
+            sleep 10
+          done
+
+          echo "Live deployment did not become healthy within the timeout."
+          exit 1
