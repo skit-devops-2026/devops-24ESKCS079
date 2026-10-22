@@ -172,7 +172,7 @@ Pipeline configuration:
 
 MedCare++ is deployed as a Docker-based web service using Render.
 
-### Live Application
+### Live URL
 
 [https://devops-24eskcs079.onrender.com](https://devops-24eskcs079.onrender.com)
 
