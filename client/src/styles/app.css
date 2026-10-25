@@ -1,0 +1,3 @@
+/* Minimal application-level rules; existing page styles remain the source of truth. */
+html { scroll-behavior: smooth; }
+#root { min-height: 100vh; }
